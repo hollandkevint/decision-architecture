@@ -1,7 +1,7 @@
 {
   "name": "decision-architecture",
-  "version": "1.0.0",
-  "description": "Decision architecture skills for Claude Code. Structured thinking before you build. Preflight checklists, decision tree exploration, kill/go assessments, anti-sycophancy prompts, and frameworks for converting ideas into decisions.",
+  "version": "1.1.0",
+  "description": "Decision architecture skills for Claude Code. Structured thinking before you build. Preflight checklists, decision tree exploration, kill/go assessments, anti-sycophancy prompts, and frameworks for converting ideas into decisions. v1.1 adds a Facilitator agent that threads decisions across stages.",
   "author": {
     "name": "Kevin Holland",
     "url": "https://github.com/hollandkevint"
@@ -17,6 +17,8 @@
     "product-management",
     "frameworks",
     "claude-code",
-    "skills"
+    "skills",
+    "agent",
+    "facilitator"
   ]
 }
