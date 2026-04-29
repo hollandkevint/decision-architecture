@@ -11,6 +11,7 @@
 - Skills activate as background context on keyword match
 - Commands are user-facing entry points (prefix: `/da:`)
 - Cross-reference related skills, don't duplicate content
+- **Agents** (added v1.1): `<name>.agent.md` in `agents/` directory. Frontmatter is `name`, `description` (with activation keywords), `model`, `tools`. Body is imperative system prompt with anti-sycophancy core embedded. Agents read `skills/<name>/SKILL.md` at runtime to walk users through them — preserves thread-holding without depending on Skill tool availability. Voice matches skills; no named persona characters.
 
 ## Quality Bar
 - Useful output on first use (no learning curve)

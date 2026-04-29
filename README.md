@@ -1,6 +1,6 @@
 # Decision Architecture
 
-Structured thinking before you build. A Claude Code plugin with 11 skills, 5 commands, and 4 prompts for making better decisions.
+Structured thinking before you build. A Claude Code plugin with 11 skills, 1 agent, 6 commands, and 4 prompts for making better decisions.
 
 ## Install
 
@@ -28,10 +28,17 @@ Or add individual skills manually by copying the `skills/` directory into your p
 | **innovation-diagnostic** | Lightweight innovation assessment. Strategic context, market analysis, disruption identification, go/no-go gates. |
 | **design-thinking-lite** | 7-step human-centered design: context, empathize, define, ideate, prototype, test, iterate. |
 
+### Agents
+
+| Agent | What it does |
+|-------|-------------|
+| **decision-facilitator** | Threads one decision across stages: framing intake (new / stuck / pre-launch / retro / free-text), routes through the skills above, applies adversarial pressure (grill-me + assumption-mapper before decision-brief), and instructs handoff to `/ce-plan` or `/ce-ideate`. Anti-sycophancy first. Invoke via `/da:decide` or `@decision-facilitator`. |
+
 ### Commands
 
 | Command | Output |
 |---------|--------|
+| `/da:decide` | Runs the decision-facilitator agent end-to-end. Decision-brief output. |
 | `/da:run-preflight` | `preflight-brief-<name>.md` |
 | `/da:challenge-idea` | `challenge-report-<name>.md` |
 | `/da:map-arbitrage-gaps` | `gap-map-<name>.md` |
