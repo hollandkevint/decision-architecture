@@ -1,7 +1,7 @@
 ---
 title: Add Decision-Facilitator Agent (v2)
 type: feat
-status: active
+status: completed
 date: 2026-04-29
 origin: docs/brainstorms/2026-04-28-decision-architecture-v2-requirements.md
 ---
