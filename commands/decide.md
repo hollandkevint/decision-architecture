@@ -6,7 +6,7 @@ user-invocable: true
 
 # Decide
 
-Invoke the `decision-facilitator` agent to thread one decision across stages: framing intake (new / stuck / pre-launch / retro / free-text), routing through existing decision-architecture skills (preflight, problem-framing, grill-me, assumption-mapper, kill-go, decision-brief), adversarial pressure as a stage, and a final decision-brief.
+Invoke the `decision-facilitator` agent to thread one decision across stages: framing intake (new / stuck / pre-launch / retro / free-text), routing through ThinkHaven Method Kit skills (preflight, problem-framing, grill-me, assumption-mapper, kill-go, decision-brief), adversarial pressure as a stage, and a final decision-brief.
 
 ## Steps
 

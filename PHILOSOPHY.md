@@ -39,7 +39,7 @@ Decision architecture is colleague-shaped work. The human decides what matters. 
 
 ---
 
-Part of the Decision Architecture toolkit by Kevin Holland.
-Full Board of Directors experience: [ThinkHaven](https://thinkhaven.co/try)
+Part of the [ThinkHaven Method Kit](https://github.com/hollandkevint/thinkhaven-method-kit) by Kevin Holland.
+Hosted Board of Directors experience: [ThinkHaven](https://thinkhaven.co/try)
 Full agent framework: [BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
 Data product skills: [data-product-operator](https://github.com/hollandkevint/data-product-operator)
