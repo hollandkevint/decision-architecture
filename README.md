@@ -1,14 +1,43 @@
-# Decision Architecture
+# ThinkHaven Method Kit
 
-Structured thinking before you build. A Claude Code plugin with 11 skills, 1 agent, 6 commands, and 4 prompts for making better decisions.
+Open decision architecture for people who need sharper judgment before they build, pitch, publish, or advise.
+
+This is the public method layer behind [ThinkHaven](https://thinkhaven.co): prompts, skills, playbooks, and frameworks for turning messy ideas into defensible decisions. Run the methods manually from this repo, or use ThinkHaven when you want the hosted version with adaptive facilitation, memory, artifacts, and a personal board of advisors.
+
+## Start here
+
+If you are a PMM, product manager, founder, writer, or consultant with an idea that needs pressure, start with:
+
+- **[`b2b-idea-vetting`](skills/b2b-idea-vetting/SKILL.md)** — a 20-minute session for vetting a B2B idea, positioning angle, offer, content thesis, or client recommendation.
+
+It produces a short decision artifact:
+
+- decision under review
+- strongest case
+- weakest assumption
+- evidence gaps
+- recommended next move
+- confidence level
 
 ## Install
 
 ```bash
-/plugin marketplace add hollandkevint/decision-architecture
+/plugin marketplace add hollandkevint/thinkhaven-method-kit
 ```
 
-Or add individual skills manually by copying the `skills/` directory into your project.
+Or copy individual files from `skills/`, `prompts/`, and `frameworks/` into your own AI workspace.
+
+## What this is
+
+ThinkHaven Method Kit is for the moment before commitment:
+
+- before you build the feature
+- before you sell the offer
+- before you publish the point of view
+- before you recommend the strategy to a client
+- before you walk into the meeting where the decision has to hold up
+
+The kit is intentionally lightweight. It does not try to be a self-hosted ThinkHaven clone. It exposes the method: the questions, pressure tests, briefs, and anti-sycophancy patterns that make decisions harder to fool yourself about.
 
 ## What's inside
 
@@ -16,6 +45,7 @@ Or add individual skills manually by copying the `skills/` directory into your p
 
 | Skill | What it does |
 |-------|-------------|
+| **b2b-idea-vetting** | 20-minute pressure test for a B2B idea, positioning angle, offer, content thesis, or client recommendation. Produces a concrete decision artifact. |
 | **preflight** | 7-question exercise before any AI session. Forces clarity on outcomes, failure modes, and hard parts. Based on Nate Jones' Preflight. |
 | **grill-me** | Decision tree exploration. "Interview me relentlessly about every aspect of this plan." Non-coding variant of Matt Pocock's viral skill. |
 | **kill-go** | 5 pointed questions that produce a viability score and a proceed/pivot/kill recommendation. |
@@ -32,7 +62,7 @@ Or add individual skills manually by copying the `skills/` directory into your p
 
 | Agent | What it does |
 |-------|-------------|
-| **decision-facilitator** | Threads one decision across stages: framing intake (new / stuck / pre-launch / retro / free-text), routes through the skills above, applies adversarial pressure (grill-me + assumption-mapper before decision-brief), and instructs handoff to `/ce-plan` or `/ce-ideate`. Anti-sycophancy first. Invoke via `/da:decide` or `@decision-facilitator`. |
+| **decision-facilitator** | Threads one decision across stages: framing intake, pressure tests, assumption mapping, and decision brief. Anti-sycophancy first. Invoke via `/da:decide` or `@decision-facilitator`. |
 
 ### Commands
 
@@ -47,11 +77,11 @@ Or add individual skills manually by copying the `skills/` directory into your p
 
 ### Prompts
 
-Works with any LLM (Claude, ChatGPT, etc.):
+Works with any LLM:
 
-- **anti-sycophancy-system-prompt** — System prompt that forces pushback instead of validation
-- **board-of-directors** — Multi-perspective prompt with advisors who disagree
-- **grill-me-non-coding** — Decision tree exploration for strategy, hiring, GTM, any non-code decision
+- **anti-sycophancy-system-prompt** — forces pushback instead of validation
+- **board-of-directors** — multi-perspective prompt with advisors who disagree
+- **grill-me-non-coding** — decision tree exploration for strategy, hiring, GTM, or any non-code decision
 - **arbitrage-gap-diagnostic** — 3 questions for evaluating any market or industry
 
 ### Frameworks
@@ -61,25 +91,38 @@ Reference documents for decision architecture practice:
 - **four-layer-decision-engineering** — Dashboard Craft > Decision Context > Decision Intent > Decision Infrastructure
 - **cognitive-extensions-taxonomy** — Maps cognitive modes to decision session types
 
+## ThinkHaven vs. the Method Kit
+
+| Use this repo when... | Use ThinkHaven when... |
+|-----------------------|------------------------|
+| You want a transparent method you can inspect, fork, and run manually. | You want a guided session that adapts to your answers. |
+| You are testing whether a prompt or playbook helps your thinking. | You want memory, artifacts, and board-style pressure over time. |
+| You want to bring the method into your own AI workspace. | You need a decision you can defend and share. |
+
+ThinkHaven is the hosted execution layer. This repo is the open method.
+
 ## The thesis
 
 When building cost approaches zero, the scarce resource is knowing what to build. These skills structure the path from "I have an idea" to "I know what to do." See [PHILOSOPHY.md](PHILOSOPHY.md) for the full argument.
 
+## Examples
+
+- [`jonathan-style-content-angle.md`](examples/jonathan-style-content-angle.md) — vetting a B2B content/positioning angle
+- [`product-manager-feature-bet.md`](examples/product-manager-feature-bet.md) — vetting a product feature bet
+
 ## Related
 
-These skills are lightweight, standalone decision tools. For deeper systems:
-
+- **[ThinkHaven](https://thinkhaven.co/try)** — The hosted Board of Directors experience: AI advisors with distinct worldviews who pressure-test your strategy
 - **[BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)** — Full agent framework with 21+ specialized agents and 50+ workflows
-- **[data-product-operator](https://github.com/hollandkevint/data-product-operator)** — 14 skills for data product managers (discovery, validation, metrics, modeling)
-- **[ThinkHaven](https://thinkhaven.co/try)** — The full Board of Directors experience: 6 AI advisors with distinct worldviews who pressure-test your strategy
+- **[data-product-operator](https://github.com/hollandkevint/data-product-operator)** — Skills for data product managers
 
 ## Credits
 
 - Nate Jones — Preflight framework, Arbitrage Gap taxonomy
-- Matt Pocock — grill-me skill pattern (adapted with attribution)
-- Frederick P. Brooks — "The Design of Design" (decision tree concept)
+- Matt Pocock — grill-me skill pattern
+- Frederick P. Brooks — "The Design of Design" decision tree concept
 - Stuart Winter-Tear — AI Graduation Path
-- Alex MH Smith — Creative brief test (Simple/Surprising/Easy)
+- Alex MH Smith — Creative brief test: Simple, Surprising, Easy
 - Pavel Samsonov — Problem framing philosophy
 - BMAD Creative Intelligence Suite — Problem-solving, innovation strategy, design thinking workflows
 

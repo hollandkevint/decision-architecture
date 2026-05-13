@@ -48,4 +48,4 @@ This is the end state. Most teams are years away from it. Knowing the destinatio
 ---
 
 From the Decision Engineering blog series by Kevin Holland.
-Full toolkit: [Decision Architecture](https://github.com/hollandkevint/decision-architecture)
+Full toolkit: [ThinkHaven Method Kit](https://github.com/hollandkevint/thinkhaven-method-kit)

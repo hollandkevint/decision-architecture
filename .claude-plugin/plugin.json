@@ -1,18 +1,22 @@
 {
-  "name": "decision-architecture",
+  "name": "thinkhaven-method-kit",
   "version": "1.1.0",
-  "description": "Decision architecture skills for Claude Code. Structured thinking before you build. Preflight checklists, decision tree exploration, kill/go assessments, anti-sycophancy prompts, and frameworks for converting ideas into decisions. v1.1 adds a Facilitator agent that threads decisions across stages.",
+  "description": "The public method layer behind ThinkHaven. Open decision architecture skills, prompts, playbooks, and frameworks for pressure-testing B2B ideas, positioning, offers, product bets, and client recommendations before committing.",
   "author": {
     "name": "Kevin Holland",
     "url": "https://github.com/hollandkevint"
   },
-  "homepage": "https://github.com/hollandkevint/decision-architecture",
-  "repository": "https://github.com/hollandkevint/decision-architecture",
+  "homepage": "https://thinkhaven.co",
+  "repository": "https://github.com/hollandkevint/thinkhaven-method-kit",
   "license": "MIT",
   "keywords": [
+    "thinkhaven",
+    "method-kit",
     "decision-making",
     "decision-architecture",
     "strategic-thinking",
+    "positioning",
+    "b2b",
     "anti-sycophancy",
     "product-management",
     "frameworks",

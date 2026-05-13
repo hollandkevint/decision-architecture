@@ -124,5 +124,5 @@ Adapted from BMAD Creative Intelligence Suite design-thinking workflow (Maya).
 
 ---
 
-Part of the [Decision Architecture](https://github.com/hollandkevint/decision-architecture) toolkit by Kevin Holland.
+Part of the [ThinkHaven Method Kit](https://github.com/hollandkevint/thinkhaven-method-kit) by Kevin Holland.
 Full Board of Directors experience: [ThinkHaven](https://thinkhaven.co/try)

@@ -29,5 +29,5 @@ Then select the skill that matches.
 
 ---
 
-From the Decision Architecture toolkit by Kevin Holland.
+From the ThinkHaven Method Kit by Kevin Holland.
 Source: Tools for Thinking Strategy Design framework.

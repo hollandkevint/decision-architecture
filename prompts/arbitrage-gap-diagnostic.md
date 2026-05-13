@@ -33,4 +33,4 @@ The durable gaps are structural: judgment, taste, relationships, system-level th
 
 Based on Nate Jones' Reinvention of Arbitrage framework.
 
-For the full toolkit: [Decision Architecture](https://github.com/hollandkevint/decision-architecture)
+For the full toolkit: [ThinkHaven Method Kit](https://github.com/hollandkevint/thinkhaven-method-kit)
