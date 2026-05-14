@@ -47,7 +47,7 @@ The kit is intentionally lightweight. It does not try to be a self-hosted ThinkH
 |-------|-------------|
 | **b2b-idea-vetting** | 20-minute pressure test for a B2B idea, positioning angle, offer, content thesis, or client recommendation. Produces a concrete decision artifact. |
 | **preflight** | 7-question exercise before any AI session. Forces clarity on outcomes, failure modes, and hard parts. Based on Nate Jones' Preflight. |
-| **grill-me** | Decision tree exploration. "Interview me relentlessly about every aspect of this plan." Non-coding variant of Matt Pocock's viral skill. |
+| **grill-me** | Decision tree exploration. Uses classic grill-me when there is no reference context, and docs-aware grill-with-docs behavior when a codebase, project, glossary, docs, or prior decisions are available. |
 | **kill-go** | 5 pointed questions that produce a viability score and a proceed/pivot/kill recommendation. |
 | **assumption-mapper** | Extract and rank assumptions from any idea. Identifies what to test first. |
 | **pull-framework** | Project/Urgent/List/Limitations. Structured problem discovery before solution design. |
@@ -81,7 +81,7 @@ Works with any LLM:
 
 - **anti-sycophancy-system-prompt** — forces pushback instead of validation
 - **board-of-directors** — multi-perspective prompt with advisors who disagree
-- **grill-me-non-coding** — decision tree exploration for strategy, hiring, GTM, or any non-code decision
+- **grill-me-non-coding** — decision tree exploration for strategy, hiring, GTM, or any non-code decision; optionally docs-aware when project context is provided
 - **arbitrage-gap-diagnostic** — 3 questions for evaluating any market or industry
 
 ### Frameworks
@@ -98,6 +98,8 @@ Reference documents for decision architecture practice:
 | You want a transparent method you can inspect, fork, and run manually. | You want a guided session that adapts to your answers. |
 | You are testing whether a prompt or playbook helps your thinking. | You want memory, artifacts, and board-style pressure over time. |
 | You want to bring the method into your own AI workspace. | You need a decision you can defend and share. |
+| You have a plan and no reference material: use `grill-me`. | You want a paste-driven hosted plan grill: use `https://thinkhaven.co/try?mode=plan-grill`. |
+| You have a codebase, project docs, glossary, or prior decisions: use `grill-me` in docs-aware mode. | You want docs-aware facilitation plus saved session artifacts. |
 
 ThinkHaven is the hosted execution layer. This repo is the open method.
 
@@ -119,7 +121,7 @@ When building cost approaches zero, the scarce resource is knowing what to build
 ## Credits
 
 - Nate Jones — Preflight framework, Arbitrage Gap taxonomy
-- Matt Pocock — grill-me skill pattern
+- Matt Pocock — MIT-licensed grill-me, grill-with-docs, and ubiquitous-language skill patterns
 - Frederick P. Brooks — "The Design of Design" decision tree concept
 - Stuart Winter-Tear — AI Graduation Path
 - Alex MH Smith — Creative brief test: Simple, Surprising, Easy
